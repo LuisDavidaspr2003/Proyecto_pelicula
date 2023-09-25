@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "23782c65-baa9-46ad-b232-37f6b2fcfe9a",
+		"name": "Peliculas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27178886",
+		"_collection_link": "https://gold-water-518512.postman.co/workspace/Team-Workspace~1d66956b-be02-42dc-88de-b31e93115d84/collection/27178886-23782c65-baa9-46ad-b232-37f6b2fcfe9a?action=share&source=collection_link&creator=27178886"
+	},
+	"item": [
+		{
+			"name": "Genero",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Director",
+			"item": []
+		},
+		{
+			"name": "Productora",
+			"item": []
+		},
+		{
+			"name": "Tipo",
+			"item": []
+		},
+		{
+			"name": "Media",
+			"item": []
+		}
+	]
+}
