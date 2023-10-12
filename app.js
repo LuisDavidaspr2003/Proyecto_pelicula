@@ -1,13 +1,21 @@
 const express = require('express')
 const { mongoConn } = require('./databases/configuracion')
 const dotenv = require('dotenv').config()
-
+const cors = require('cors')
 mongoConn()
 
 const app = express()
 
 
 app.use(express.json())
+app.use(cors({
+    origin: '*'
+}))
+
+
+
+
+
 
 
 const generos = require('./routes/genero')
