@@ -48,4 +48,4 @@ app.use('/api/v1/medias', medias)
 
 
 
-module.exports = app
+module.exports = app;

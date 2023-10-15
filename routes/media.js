@@ -1,21 +1,22 @@
-const { Router } = require('express')
-const { createMedia} = require('../controllers/media')
-const { consultarmedia} = require('../controllers/media')
-const { editarMedia} = require('../controllers/media')
-const { eliminarMedia} = require('../controllers/media')
 
-const router = Router()
+const { Router } = require('express');
+const { createMedia } = require('../controllers/media');
+const { consultarMedia } = require('../controllers/media');
+const { editarMedia } = require('../controllers/media');
+const { eliminarMedia } = require('../controllers/media');
 
-router.post('/', createMedia)
+const router = Router();
 
+// Ruta para crear un nuevo medio
+router.post('/', createMedia);
 
+// Ruta para consultar todos los medios
+router.get('/', consultarMedia);
 
-router.get('/', consultarmedia)
+// Ruta para editar un medio por su ID
+router.put('/:id', editarMedia);
 
+// Ruta para eliminar un medio por su ID
+router.delete('/:id', eliminarMedia);
 
-router.put('/',editarMedia)
-
-router.delete('/', eliminarMedia)
-
-
-module.exports = router
+module.exports = router;

@@ -32,7 +32,7 @@ const createMedia = async (req = request, res = response) => {
 }
 
 
-const consultarmedia = async (req, res) => {
+const consultarMedia = async (req, res) => {
     try {
         const medias = await Media.find()
             .populate('genero', 'nombre')
@@ -143,6 +143,6 @@ const eliminarMedia = async (req, res) => {
   };
   
 module.exports = {
-   createMedia, editarMedia,consultarmedia,eliminarMedia
+   createMedia, editarMedia,consultarMedia,eliminarMedia
 };
 
